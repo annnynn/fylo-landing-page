@@ -10,6 +10,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.body-container{
     padding: 24px 24px 0px 24px;
 }
 
@@ -23,7 +27,7 @@ h1 {
 
 p {
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 24px;
     letter-spacing: 0.53px;
     font-family: 'Barlow', sans-serif;
@@ -39,6 +43,29 @@ p {
 
 img {
     width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    text-align:center;
 }
 
 nav {
@@ -66,11 +93,18 @@ li{
 
 header h1 {
     margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
 }
 
 header p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
     margin-top: 24px;
     width: 296px;
+
 }
 
 .input-box {
@@ -144,8 +178,27 @@ header button {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    font-family: 'Barlow', sans-serif;
     margin-top: 0;
+}
+
+.arrow-link{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.fylo-link{
+    color: hsla(170, 45%, 43%, 1);
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .quote-box {
@@ -154,7 +207,6 @@ header button {
     justify-content: flex-start;
     width: 280px;
     border-radius: 3.93px;
-    margin-top: 40px;
     background-color: hsla(0, 0%, 100%, 1);
     padding-left: 26px;
     padding-top: 20px;
@@ -220,6 +272,123 @@ header button {
     width: 73px;
 }
 
+.singup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsla(238, 22%, 44%, 1);
+    color: white;
+    padding:54px 47px 71px 48px;
+}
+
+.singup h1{
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.singup p{
+    font-size: 14px;
+    line-height: 21px;
+    width: 280px;
+    margin-top: 16px;
+}
+
+.box-two{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    row-gap: 8px;
+}
+
+
+.singup-input {
+    width: 240px;
+    height: 32px;
+    border-radius: 3px;
+    padding: 11px 100px 9px 8px;
+}
+
+.singup button {
+    width: 240px;
+    height: 32px;
+    color: white;
+    background-color: hsla(221, 100%, 71%, 1);
+    border: 0;
+    border-radius: 1.47px;
+}
+
+.box-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-two span {
+    margin-top: 4px;
+    display: none;
+
+}
+
+.row h3, span{
+    text-align: start;
+}
+
+li{
+list-style-type: none;
+}
+
+/*Footer section*/
+
+footer{
+  background-color: hsla(243, 87%, 12%, 1); 
+  color: white;
+  padding: 65px 0px 42px 39px;   
+}
+
+.logo-container img{
+    width: 105px;
+    height: 30px;
+}
+
+.mobile-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.mobile-icon img{
+    width: 18px;
+    height: 18px;
+}
+
+.email-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.email-icon img{
+    width: 18px;
+    height: 18px;
+}
+
+
+.column-two{
+    margin-top: 32px;
+}
+
+.column-three{
+    margin-top: 30px;
+}
+
+.column-four{
+    margin-top: 32px;
+}
+
 @media (min-width:1440px) {
     body {
         padding: 80px 80px 0px 80px;
@@ -263,7 +432,6 @@ header button {
     }
 
     header p {
-        width: 585px;
         margin-top: 15px;
     }
 
@@ -283,6 +451,7 @@ header button {
         height: 45px;
         width: 320px;
         border-radius: 3.13px;
+        padding: 21px;
     }
 
     header button {
@@ -333,7 +502,12 @@ header button {
         background-color: hsla(238, 22%, 44%, 1);
         color: white;
         display: flex;
+        justify-content: space-between;
         width: 100%;
+    }
+
+    .singup-input{
+        padding: 21px;
     }
 
     .singup h1 {
@@ -464,6 +638,12 @@ header button {
 
 .column-four ul li:hover{
     color:hsla(221, 100%, 71%, 1);
+    border: 1px solid hsla(221, 100%, 71%, 1);;
 }
+
+::placeholder{
+    color: hsla(0, 0%, 76%, 1);
+}
+
 
 }
