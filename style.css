@@ -64,6 +64,20 @@ img {
     text-align: center;
 }
 
+.input-box input:focus{
+    outline: 0;
+}
+
+.input-control.error input{
+    border-color: red;
+}
+
+.input-control .error{
+    color: red;
+    font-size: 9px;
+    height: 13px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -115,6 +129,11 @@ header .email {
     height: 40px;
 }
 
+
+.email{
+    padding: 21px;
+}
+
 header button {
     border: 0;
     color: white;
@@ -127,15 +146,8 @@ header button {
 .middle {
     margin-top: 90px;
     background-color: hsla(240, 75%, 98%, 1);
-
+    max-width: 327px;
 }
-
-.main-middle {
-    margin: 0 auto;
-    background-color: hsla(240, 75%, 98%, 1);
-}
-
-
 
 .cuve-img {
     background-color: #F2F2F2;
@@ -283,6 +295,7 @@ header button {
     background-color: hsla(238, 22%, 44%, 1);
     color: white;
     padding: 54px 47px 71px 48px;
+   
 }
 
 .singup h1 {
@@ -350,6 +363,7 @@ footer {
     background-color: hsla(243, 87%, 12%, 1);
     color: white;
     padding: 65px 0px 42px 39px;
+    min-width: 375px;
 }
 
 .logo-container img {
@@ -453,7 +467,6 @@ footer {
     }
 
     header{
-        width: 100%;
         max-width: 1440px;
     }
 
@@ -462,7 +475,7 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 178px 80px 107px 80px;
-        width: 100%;
+        min-width: 375px;
     }
 
     .paragraps p{

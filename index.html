@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=Be+Vietnam+Pro:wght@400;500;700;800&family=Big+Shoulders+Display:wght@900&family=IBM+Plex+Sans:wght@400;700&family=Kumbh+Sans:wght@700;800&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@700;800&family=Raleway:wght@400;700&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap"
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=Be+Vietnam+Pro:wght@400;500;700;800&family=Big+Shoulders+Display:wght@900&family=IBM+Plex+Sans:wght@400;700&family=Kumbh+Sans:wght@700;800&family=Open+Sans&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@700;800&family=Raleway:wght@400;700&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>fylo</title>
 </head>
@@ -37,11 +37,15 @@
                 <p>Fylo stores your most important files in one secure location. Access them wherever you need, share
                     and
                     collaborate with friends, family, and co-workers.</p>
-                <div class="input-box">
-                    <input class="email" type="email" placeholder="Enter your email...">
-                    <button>Get Started</button>
-                </div>
+                <form id="form" action="#">
+                    <div class="input-box">
+                        <input type="text" class="email" id="email" placeholder="Enter your email..."
+                            onkeydown="validateEmail()">
+                        <span id="error"></span>
+                        <button type="button">Get Started</button>
+                    </div>
         </div>
+        </form>
     </header>
     </section>
     <section class="middle">
@@ -59,7 +63,7 @@
                         file storage needs.</p>
                     <p>Securely share files and folders with friends, family and colleagues for live collaboration. No
                         email attachments required!</p>
-                       <div class="link">
+                    <div class="link">
                         <a href="#" class="fylo-link">See how Fylo works</a>
                         <img class="arrow-link" src="/images/icon-arrow.svg" alt="">
                     </div>
@@ -101,13 +105,13 @@
             </div>
 
             <div class="mobile-icon">
-            <img src="/images/icon-phone.svg" class="icon" alt="">
-            <p>Phone: +1-543-123-4567</p>
-        </div>
-        <div class="email-icon">
-            <img src="/images/icon-email.svg" class="icon" alt="">
-            <p>example@fylo.com</p>
-        </div>
+                <img src="/images/icon-phone.svg" class="icon" alt="">
+                <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="email-icon">
+                <img src="/images/icon-email.svg" class="icon" alt="">
+                <p>example@fylo.com</p>
+            </div>
         </div>
         <div class="column-two">
             <ul>
@@ -126,12 +130,16 @@
         </div>
         <div class="column-four">
             <ul>
-                <a href="#"></a><li class="fa fa-facebook"></li>
-                <a href="#"></a><li class="fa fa-twitter"></li>
-                <a href="#"></a><li class="fa fa-instagram"></li>
+                <a href="#"></a>
+                <li class="fa fa-facebook"></li>
+                <a href="#"></a>
+                <li class="fa fa-twitter"></li>
+                <a href="#"></a>
+                <li class="fa fa-instagram"></li>
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
