@@ -38,21 +38,21 @@
                     and
                     collaborate with friends, family, and co-workers.</p>
                 <form id="form" action="#">
-                    <div class="input-box">
+                    <div class="input-box success error">
                         <input type="text" class="email" id="email" placeholder="Enter your email..."
                             onkeydown="validateEmail()">
-                        <span id="error"></span>
                         <button type="button">Get Started</button>
+                        <span class="error" id="error"></span>
                     </div>
         </div>
         </form>
     </header>
     </section>
+    <div class="middle-flex">
+        <img class="cuve-img-mobile" src="/images/bg-curve-mobile.svg" alt="">
+        <img class="cuve-img-dekstop" src="/images/bg-curve-desktop.svg" alt="">
     <section class="middle">
         <div class="row">
-            <div class="cuve-img">
-                <img class="cuve-img" src="/images/bg-curve-mobile.svg" alt="">
-            </div>
             <div class="middle-img">
                 <img src="/images/illustration-2.svg" class="second-illustration" alt="">
             </div>
@@ -61,12 +61,14 @@
                 <div class="paragraphs">
                     <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your
                         file storage needs.</p>
-                    <p>Securely share files and folders with friends, family and colleagues for live collaboration. No
+                    <p class="space">Securely share files and folders with friends, family and colleagues for live
+                        collaboration. No
                         email attachments required!</p>
                     <div class="link">
                         <a href="#" class="fylo-link">See how Fylo works</a>
                         <img class="arrow-link" src="/images/icon-arrow.svg" alt="">
                     </div>
+                    <hr>
                 </div>
                 <a href="" class="link"></a>
                 <div class="quote-box">
@@ -86,6 +88,7 @@
             </section>
         </div>
     </section>
+</div>
     <section class="singup">
         <div class="box-one">
             <h1>Get early access today</h1>
@@ -99,6 +102,7 @@
         </div>
     </section>
     <footer>
+        <div class="flex-footer">
         <div class="column-one">
             <div class="logo-container">
                 <img src="/images/Group 4.svg" alt="" class="footer-logo">
@@ -138,6 +142,7 @@
                 <li class="fa fa-instagram"></li>
             </ul>
         </div>
+    </div>
     </footer>
     <script src="index.js"></script>
 </body>

@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px 24px 0px 24px;
+    width: 100vw;
 }
 
 h1 {
@@ -23,11 +23,17 @@ h1 {
 
 p {
     font-size: 17px;
-    font-weight: 100;
     line-height: 24px;
     letter-spacing: 0.53px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    list-style-type: none;
+}
+
 
 .logo {
     height: 24px;
@@ -56,31 +62,35 @@ img {
     align-items: center;
 }
 
-
-
 .input-box {
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-.input-box input:focus{
+.input-box input:focus {
     outline: 0;
 }
 
-.input-control.error input{
-    border-color: red;
+.success input{
+    border: 1px solid green;
 }
 
-.input-control .error{
-    color: red;
-    font-size: 9px;
-    height: 13px;
+.error input{
+    border: 1px solid red;
 }
+
+.error {
+    display: block;
+}
+
 
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 24px 24px 0px 24px;
+    min-width: 375px;
 }
 
 .nav-list {
@@ -88,10 +98,6 @@ nav {
     list-style: none;
     column-gap: 24px;
     font-family: 'Raleway', sans-serif;
-}
-
-li {
-    cursor: pointer;
 }
 
 .illustration {
@@ -130,7 +136,7 @@ header .email {
 }
 
 
-.email{
+.email {
     padding: 21px;
 }
 
@@ -145,12 +151,24 @@ header button {
 
 .middle {
     margin-top: 90px;
-    background-color: hsla(240, 75%, 98%, 1);
-    max-width: 327px;
+    background-color: #f8f8fe;
+    width: 100%;
 }
 
-.cuve-img {
-    background-color: #F2F2F2;
+.middle-flex {
+    position: relative;
+    width: 100%;
+}
+
+
+.cuve-img-mobile {
+    position: absolute;
+    top: 40px;
+    max-height: 53px;
+}
+
+.cuve-img-dekstop {
+    display: none;
 }
 
 .second-illustration {
@@ -169,6 +187,7 @@ header button {
     align-items: center;
     text-align: center;
     margin-top: 50px;
+    padding-bottom: 81px;
 }
 
 .article h4 {
@@ -179,15 +198,25 @@ header button {
     color: hsla(243, 87%, 12%, 1);
 }
 
+
 .paragraphs {
     margin-top: 8px;
+    padding: 24px 35px 0px 20px;
+    color: hsla(243, 14%, 43%, 1);
 }
 
-.article p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+.space {
     margin-top: 16px;
+}
+
+
+
+.article p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+
+    letter-spacing: 0.38px;
 
 }
 
@@ -209,6 +238,23 @@ header button {
     color: hsla(170, 45%, 43%, 1);
     text-decoration: none;
     font-size: 12px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    height: 1px;
+    width:118px;
+    margin-top: 5px;
+    border: 0;
+    background: #3DA08F;
+}
+
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-box {
@@ -219,14 +265,18 @@ header button {
     border-radius: 3.93px;
     background-color: hsla(0, 0%, 100%, 1);
     padding-left: 26px;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 20px;
-    margin-bottom: 81px;
+
+}
+
+.cuve-dekstop {
+    display: none;
 }
 
 .quote-img {
-    height: 54x;
     width: 14px;
+    height: auto;
     padding-bottom: 5px;
 }
 
@@ -238,7 +288,7 @@ header button {
     letter-spacing: 0.38px;
     text-align: start;
     width: 241.3px;
-    padding: 0 20px 0 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .profile-container {
@@ -253,7 +303,7 @@ header button {
     height: 24px;
 }
 
-.quote-img{
+.quote-img {
     margin-left: 20px;
 }
 
@@ -294,9 +344,13 @@ header button {
     text-align: center;
     background-color: hsla(238, 22%, 44%, 1);
     color: white;
-    padding: 54px 47px 71px 48px;
-   
+    min-width: 375px;
+    width: 100%;
+    padding: 54px 47px 71px 47px;
+    ;
+
 }
+
 
 .singup h1 {
     color: white;
@@ -324,6 +378,7 @@ header button {
     height: 32px;
     border-radius: 3px;
     padding: 11px 100px 9px 8px;
+    border: 0;
 }
 
 .singup button {
@@ -348,22 +403,36 @@ header button {
 
 }
 
+.review {
+    order: 2;
+}
+
 .row h3,
 span {
     text-align: start;
 }
 
-li {
-    list-style-type: none;
-}
-
 /*Footer section*/
+
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 footer {
     background-color: hsla(243, 87%, 12%, 1);
     color: white;
     padding: 65px 0px 42px 39px;
     min-width: 375px;
+    width: 100%;
+}
+
+footer li{
+    margin-top: 16px;
 }
 
 .logo-container img {
@@ -425,7 +494,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 55px;
-   padding-right: 39px;
+    padding-right: 39px;
 }
 
 
@@ -443,14 +512,10 @@ footer {
 .column-four ul li:hover {
     color: hsla(221, 100%, 71%, 1);
     border: 1px solid hsla(221, 100%, 71%, 1);
-    
+
 }
 
 @media (min-width:1440px) {
-    body {
-        padding: 80px 80px 0px 80px;
-    }
-
     .logo {
         height: 49px;
         width: 166px;
@@ -461,41 +526,82 @@ footer {
     }
 
     li {
-        font-family: 'Barlow', sans-serif;
         font-size: 16px;
         font-weight: 400;
     }
 
-    header{
+    header {
         max-width: 1440px;
     }
 
+    .info span {
+        width: 90px;
+        font-size: 8px;
+    }
+
     .middle {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 178px 80px 107px 80px;
-        min-width: 375px;
+        flex-direction: row-reverse;
+        padding: 0px 80px 107px 80px;
+        width: 100%;
+        margin-top: 0;
     }
 
-    .paragraps p{
+    .fylo-link{
+        font-size: 16px;
+    }
+
+    hr{
+        width: 166px;
+    }
+
+    .middle-flex {
+        margin-top: 164px;
+        width: 100%;
+    }
+
+    .paragraps p {
         padding: 0;
+    }
+
+    .cuve-img-mobile {
+        display: none;
+    }
+
+    .cuve-img-dekstop {
+        display: block;
+    }
+
+    .cuve {
+        top: 720px;
+        position: absolute;
     }
 
     .row {
         display: flex;
         flex-direction: row;
-        column-gap: 55px;
+        column-gap: 90px;
         margin-top: 101px;
         align-items: center;
+        flex-direction: row-reverse;
     }
 
     header h1 {
         margin: 0;
+        width: 627px;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 700;
     }
 
     header p {
+        font-size: 17px;
+        line-height: 24px;
         margin-top: 15px;
+        width: 585px;
     }
 
     .illustration {
@@ -512,7 +618,7 @@ footer {
         width: 100%;
     }
 
-    .review{
+    .review {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -546,6 +652,13 @@ footer {
         align-items: flex-start;
         text-align: start;
         margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .article p {
+        font-size: 13px;
+        line-height: 23px;
+
     }
 
     .article h4 {
@@ -559,9 +672,20 @@ footer {
         margin-top: 23px;
     }
 
+    .paragraphs{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+    }
+    
+
     .paragraphs p {
         width: 100%;
+        width: 529px;
         margin-top: 16px;
+        color: hsla(243, 87%, 12%, 1);
+        font-size: 16px;
     }
 
     .quote-box {
@@ -576,9 +700,10 @@ footer {
         color: white;
         display: flex;
         flex-direction: row;
-        align-self:flex-start;
+        align-self: flex-start;
         text-align: start;
         justify-content: space-between;
+        width: 100%;
     }
 
     .singup-input {
@@ -634,6 +759,15 @@ footer {
         letter-spacing: 0.4px;
     }
 
+    .email{
+       border: 1px solid green;
+    }
+
+    .email{
+        border:2px solid red;
+    }
+
+
     footer {
         display: flex;
         justify-content: space-between;
@@ -641,6 +775,20 @@ footer {
         background-color: hsla(243, 87%, 12%, 1);
         color: white;
         padding: 92px 260px 86px 80px;
+    }
+
+    .flex-footer{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    footer .row {
+        align-items: flex-start;
+        text-align: start;
     }
 
     footer li {
