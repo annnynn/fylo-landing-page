@@ -38,11 +38,10 @@
                     and
                     collaborate with friends, family, and co-workers.</p>
                 <form id="form" action="#">
-                    <div class="input-box success error">
-                        <input type="text" class="email" id="email" placeholder="Enter your email..."
-                            onkeydown="validateEmail()">
-                        <button type="button">Get Started</button>
-                        <span class="error" id="error"></span>
+                    <div class="input-box">
+                        <input type="text" name="email" class="email" id="email" placeholder="Enter your email...">
+                        <button type="button" id="submit" onclick="validate()">Get Started</button>
+                        <span id="errorMessage" hidden></span>
                     </div>
         </div>
         </form>
@@ -51,98 +50,102 @@
     <div class="middle-flex">
         <img class="cuve-img-mobile" src="/images/bg-curve-mobile.svg" alt="">
         <img class="cuve-img-dekstop" src="/images/bg-curve-desktop.svg" alt="">
-    <section class="middle">
-        <div class="row">
-            <div class="middle-img">
-                <img src="/images/illustration-2.svg" class="second-illustration" alt="">
-            </div>
-            <section class="article">
-                <h4>Stay productive, wherever you are</h4>
-                <div class="paragraphs">
-                    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your
-                        file storage needs.</p>
-                    <p class="space">Securely share files and folders with friends, family and colleagues for live
-                        collaboration. No
-                        email attachments required!</p>
-                    <div class="link">
-                        <a href="#" class="fylo-link">See how Fylo works</a>
-                        <img class="arrow-link" src="/images/icon-arrow.svg" alt="">
-                    </div>
-                    <hr>
+        <section class="middle">
+            <div class="row">
+                <div class="middle-img">
+                    <img src="/images/illustration-2.svg" class="second-illustration" alt="">
                 </div>
-                <a href="" class="link"></a>
-                <div class="quote-box">
-                    <img src="/images/icon-quotes.svg" alt="" class="quote-img">
-                    <p class="quote-paragraph">
-                        Fylo has improved our team productivity by an order of magnitude. Since making the switch our
-                        team has become a well-oiled collaboration machine.
-                    </p>
-                    <div class="profile-container">
-                        <img src="/images/avatar-testimonial.jpg" class="profile-img" alt="">
-                        <div class="info">
-                            <h3 class="name">Kyle Burton</h3>
-                            <span>Founder & CEO, Huddle</span>
+                <section class="article">
+                    <h4>Stay productive, wherever you are</h4>
+                    <div class="paragraphs">
+                        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of
+                            your
+                            file storage needs.</p>
+                        <p class="space">Securely share files and folders with friends, family and colleagues for live
+                            collaboration. No
+                            email attachments required!</p>
+                        <div class="link">
+                            <a href="#" class="fylo-link">See how Fylo works</a>
+                            <img class="arrow-link" src="/images/icon-arrow.svg" alt="">
+                        </div>
+                        <hr>
+                    </div>
+                    <a href="" class="link"></a>
+                    <div class="quote-box">
+                        <img src="/images/icon-quotes.svg" alt="" class="quote-img">
+                        <p class="quote-paragraph">
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch
+                            our
+                            team has become a well-oiled collaboration machine.
+                        </p>
+                        <div class="profile-container">
+                            <img src="/images/avatar-testimonial.jpg" class="profile-img" alt="">
+                            <div class="info">
+                                <h3 class="name">Kyle Burton</h3>
+                                <span>Founder & CEO, Huddle</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    </section>
-</div>
+                </section>
+            </div>
+        </section>
+    </div>
     <section class="singup">
         <div class="box-one">
             <h1>Get early access today</h1>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                 questions, our support team would be happy to help you.</p>
         </div>
-        <div class="box-two">
-            <input class="singup-input" type="email" name="email" placeholder="email@example.com">
-            <span>Please check your email</span>
-            <button>Get Started For Free</button>
-        </div>
+        <form id="form" action="#">
+            <div class="box-two success error">
+                <input type="text" name="email" class="singup-input" id="email" placeholder="email@example.com">
+                <button type="button" id="submit" onclick="validate()">Get Started</button>
+                <span id="errorMessage" hidden></span>
+            </div>
+            </div>
     </section>
     <footer>
         <div class="flex-footer">
-        <div class="column-one">
-            <div class="logo-container">
-                <img src="/images/Group 4.svg" alt="" class="footer-logo">
-            </div>
+            <div class="column-one">
+                <div class="logo-container">
+                    <img src="/images/Group 4.svg" alt="" class="footer-logo">
+                </div>
 
-            <div class="mobile-icon">
-                <img src="/images/icon-phone.svg" class="icon" alt="">
-                <p>Phone: +1-543-123-4567</p>
+                <div class="mobile-icon">
+                    <img src="/images/icon-phone.svg" class="icon" alt="">
+                    <p>Phone: +1-543-123-4567</p>
+                </div>
+                <div class="email-icon">
+                    <img src="/images/icon-email.svg" class="icon" alt="">
+                    <p>example@fylo.com</p>
+                </div>
             </div>
-            <div class="email-icon">
-                <img src="/images/icon-email.svg" class="icon" alt="">
-                <p>example@fylo.com</p>
+            <div class="column-two">
+                <ul>
+                    <li>About Us</li>
+                    <li>Jobs</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="column-three">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="column-four">
+                <ul>
+                    <a href="#"></a>
+                    <li class="fa fa-facebook"></li>
+                    <a href="#"></a>
+                    <li class="fa fa-twitter"></li>
+                    <a href="#"></a>
+                    <li class="fa fa-instagram"></li>
+                </ul>
             </div>
         </div>
-        <div class="column-two">
-            <ul>
-                <li>About Us</li>
-                <li>Jobs</li>
-                <li>Press</li>
-                <li>Blog</li>
-            </ul>
-        </div>
-        <div class="column-three">
-            <ul>
-                <li>Contact Us</li>
-                <li>Terms</li>
-                <li>Privacy</li>
-            </ul>
-        </div>
-        <div class="column-four">
-            <ul>
-                <a href="#"></a>
-                <li class="fa fa-facebook"></li>
-                <a href="#"></a>
-                <li class="fa fa-twitter"></li>
-                <a href="#"></a>
-                <li class="fa fa-instagram"></li>
-            </ul>
-        </div>
-    </div>
     </footer>
     <script src="index.js"></script>
 </body>

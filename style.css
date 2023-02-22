@@ -69,21 +69,16 @@ img {
     flex-wrap: wrap;
 }
 
+button{
+    cursor: pointer;
+}
+
 .input-box input:focus {
     outline: 0;
 }
 
-.success input{
-    border: 1px solid green;
-}
 
-.error input{
-    border: 1px solid red;
-}
 
-.error {
-    display: block;
-}
 
 
 nav {
