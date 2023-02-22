@@ -39,10 +39,11 @@
                     collaborate with friends, family, and co-workers.</p>
                 <form id="form" action="#">
                     <div class="input-box">
-                        <input type="text" name="email" class="email" id="email" placeholder="Enter your email...">
-                        <button type="button" id="submit" onclick="validate()">Get Started</button>
-                        <span id="errorMessage" hidden></span>
+                        <input type="text" name="emailInput" class="email" id="email" placeholder="Enter your email..."
+                            style="border: 1px solid gray;">
+                        <button type="button" id="submit" class="first" onclick="validate()">Get Started</button>
                     </div>
+                    <label id="errorMessage" style="color:red;visibility:hidden">Please check your email</label>
         </div>
         </form>
     </header>
@@ -89,19 +90,19 @@
                 </section>
             </div>
         </section>
-    </div>
-    <section class="singup">
+    </div>  
+    <section class="signup">
         <div class="box-one">
             <h1>Get early access today</h1>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                 questions, our support team would be happy to help you.</p>
         </div>
         <form id="form" action="#">
-            <div class="box-two success error">
-                <input type="text" name="email" class="singup-input" id="email" placeholder="email@example.com">
-                <button type="button" id="submit" onclick="validate()">Get Started</button>
-                <span id="errorMessage" hidden></span>
-            </div>
+            <div class="box-two">
+                <input type="text" name="signUpInput" class="signup-input" id="signup" placeholder="email@example.com"
+                    style="border: 1px solid gray;">
+                    <label id="signUpError" style="color:red;visibility:hidden;">Please check your email</label>
+                    <button type="button" id="submit" class="second" onclick="validateSignUp()">Get Started</button>
             </div>
     </section>
     <footer>

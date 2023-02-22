@@ -78,9 +78,6 @@ button{
 }
 
 
-
-
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -331,7 +328,7 @@ hr {
     width: 73px;
 }
 
-.singup {
+.signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,18 +339,18 @@ hr {
     min-width: 375px;
     width: 100%;
     padding: 54px 47px 71px 47px;
-    ;
+
 
 }
 
 
-.singup h1 {
+.signup h1 {
     color: white;
     font-size: 18px;
     line-height: 24px;
 }
 
-.singup p {
+.signup p {
     font-size: 14px;
     line-height: 21px;
     width: 280px;
@@ -368,15 +365,16 @@ hr {
 }
 
 
-.singup-input {
-    width: 240px;
-    height: 32px;
-    border-radius: 3px;
-    padding: 11px 100px 9px 8px;
-    border: 0;
+.signup-input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+padding: 11px 0px 9px 8px;
+   font-size: 12px;
+   width: 100%;
 }
 
-.singup button {
+.signup button {
     width: 240px;
     height: 32px;
     color: white;
@@ -413,11 +411,18 @@ span {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
 }
 
+@media (min-width: 380px){
+    .flex-footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
 footer {
     background-color: hsla(243, 87%, 12%, 1);
     color: white;
@@ -689,7 +694,7 @@ footer li{
         padding-bottom: 26px;
     }
 
-    .singup {
+    .signup {
         padding: 100px 120px 80px 80px;
         background-color: hsla(238, 22%, 44%, 1);
         color: white;
@@ -701,18 +706,18 @@ footer li{
         width: 100%;
     }
 
-    .singup-input {
+    .signup-input {
         padding: 21px;
     }
 
-    .singup h1 {
+    .signup h1 {
         color: white;
         font-size: 32px;
         line-height: 48px;
         font-weight: 700;
     }
 
-    .singup p {
+    .signup p {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.5px;
@@ -721,14 +726,22 @@ footer li{
         font-weight: 400;
     }
 
-    .singup-input {
+    .signup-input {
         width: 480px;
         height: 48px;
         border-radius: 3px;
     }
 
-    .singup button {
-        width: 200px;
+    label{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        letter-spacing: 0.4px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 2px;
+    }
+
+    .signup button {
         height: 48px;
         color: white;
         background-color: hsla(221, 100%, 71%, 1);
