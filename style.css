@@ -416,7 +416,7 @@ span {
     text-align: start;
 }
 
-@media (min-width: 380px){
+@media (min-width: 500px){
     .flex-footer{
         justify-content: center;
         align-items: center;
