@@ -39,8 +39,8 @@
                     collaborate with friends, family, and co-workers.</p>
                 <form id="form" action="#">
                     <div class="input-box">
-                        <input type="text" name="emailInput" class="email" id="email" placeholder="Enter your email..."
-                            style="border: 1px solid gray;">
+                        <input type="text" name="emailInput" class="email" id="email" placeholder="Enter your email..." 
+                            style="border: 1px solid gray;"onclick="isEmpty()">
                         <button type="button" id="submit" class="first" onclick="validate()">Get Started</button>
                     </div>
                     <label id="errorMessage" style="color:red;visibility:hidden">Please check your email</label>
@@ -100,7 +100,7 @@
         <form id="form" action="#">
             <div class="box-two">
                 <input type="text" name="signUpInput" class="signup-input" id="signup" placeholder="email@example.com"
-                    style="border: 1px solid gray;">
+                    style="border: 1px solid gray;" onclick="isEmptySign()">
                     <label id="signUpError" style="color:red;visibility:hidden;">Please check your email</label>
                     <button type="button" id="submit" class="second" onclick="validateSignUp()">Get Started</button>
             </div>

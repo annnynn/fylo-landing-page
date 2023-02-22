@@ -21,8 +21,19 @@ function validate() {
         document.getElementById("errorMessage").style.visibility = "visible";
         document.getElementById("errorMessage").style.color = "red";
         document.getElementById("email").style.border = "1px solid red";
-    }  
+    }
 
+}
+
+document.getElementById("email").addEventListener("click", isEmpty);
+
+function isEmpty() {
+
+    if (email.value == "") {
+        document.getElementById("email").style.color = "black";
+        document.getElementById("email").style.border = "1px solid black";
+        document.getElementById("errorMessage").innerHTML = "";
+    }
 }
 
 function validateSignUp() {
@@ -39,5 +50,14 @@ function validateSignUp() {
         document.getElementById("signUpError").style.visibility = "visible";
         document.getElementById("signUpError").style.color = "white";
         document.getElementById("signup").style.border = "1px solid red";
+    }
+
+}
+
+function isEmptySign() {
+    if (signup.value == "") {
+        document.getElementById("signup").style.color = "black";
+        document.getElementById("signup").style.border = "1px solid black";
+        document.getElementById("signUpError").innerHTML = "";
     }
 }
