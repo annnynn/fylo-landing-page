@@ -416,6 +416,14 @@ span {
     text-align: start;
 }
 
+.email{
+    border: 1px solid green;
+ }
+
+ .email{
+     border:2px solid red;
+ }
+
 @media (min-width: 500px){
     .flex-footer{
         justify-content: center;
@@ -514,6 +522,13 @@ footer li{
     border: 1px solid hsla(221, 100%, 71%, 1);
 
 }
+.email{
+    border: 1px solid green;
+ }
+
+ .email{
+     border:2px solid red;
+ }
 
 @media (min-width:1440px) {
     .logo {
